@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>CADD</title>
+<link rel="stylesheet" href="reveal/css/reveal.css">
+<link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
+
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+<section data-markdown data-separator="---">
+<script type="text/template">
+
+
+## MW - Molecular Weight
+
+masa molowa
+
+---
+
+## Rb - number of rotatable bonds
+
+![rb](http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual-4.gif)
+
+(obrazek z: http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html)
+
+---
+
+## HBA, HBD
+
+- **HBA** - Hydrogen bonds acceptors;
+- **HBD** - hydrogen bonds donor
+
+![HBA/HBD](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WikipediaHDonorAcceptor.png/300px-WikipediaHDonorAcceptor.png)
+
+Obrazek: [wikipedia](https://en.wikipedia.org/wiki/Hydrogen_bond)
+
+---
+
+## logP
+
+- (**clogP, xlogP** ...) - z wikipedii: Współczynnik podziału (P) – w chemii i farmakologii terminem tym określany jest stosunek stężeń substancji w dwóch niemieszających się rozpuszczalnikach w stanie równowagi. Zazwyczaj jednym z rozpuszczalników jest woda drugim natomiast substancja hydrofobowa taka jak n-oktanol. Współczynnik podziału mierzy się dla niezjonizowanej formy substancji odpowiednio dobierając pH podczas pomiarów. Jest on używany do określania lipofilowości substancji. Współczynnik podziału podawany jest w formie logarytmicznej zgodnie ze wzorem:
+
+---
+
+## logP
+
+![logP](https://upload.wikimedia.org/math/4/7/2/472cd3567a5fcfdf2950f830fd41423c.png)
+
+---
+
+### logD
+
+![logD](https://upload.wikimedia.org/math/c/d/0/cd04417ce4084b638628a88497e679d8.png)
+
+- The **distribution coefficient** is the ratio of the sum of the concentrations of all forms of the compound (ionized plus un-ionized) in each of the two phases. As such, **it depends on pH**.
+
+---
+## PSA (TPSA)
+
+**(Topological) Polar surface area** (Å²)
+
+Paracetamol:
+
+![paracetamol](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Paracetamol-skeletal.svg/220px-Paracetamol-skeletal.svg.png)
+
+![PSA](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Polar-surface-area.png/350px-Polar-surface-area.png)
+
+</script>
+</section>
+
+
+</div>
+</div>
+
+<script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/js/reveal.js"></script>
+
+<script>
+
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+]
+});
+
+</script>
+
+</body>
+</html>
+
