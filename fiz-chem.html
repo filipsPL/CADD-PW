@@ -5,11 +5,13 @@
 <meta charset="utf-8">
 <title>CADD</title>
 <link rel="stylesheet" href="reveal/css/reveal.css">
-<link rel="stylesheet" href="reveal/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal/css/theme/filip.css" id="theme">
 
 </head>
 
 <body>
+<!-- .element: style="font-size: 14px; color: silver;" -->
+
 <div class="reveal">
 <div class="slides">
 
@@ -17,18 +19,23 @@
 <section data-markdown data-separator="---">
 <script type="text/template">
 
-
-## MW - Molecular Weight
-
-masa molowa
+# Niekótre istotne parametry fiz-chem
 
 ---
 
-## Rb - number of rotatable bonds
+## MW - Molecular Weight
+
+- masa molowa
+
+---
+
+## number of rotatable bonds
+
+- rb, rotb
 
 ![rb](http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual-4.gif)
 
-(obrazek z: http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html)
+http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html <!-- .element: style="font-size: 14px; color: silver;" -->
 
 ---
 
@@ -39,27 +46,51 @@ masa molowa
 
 ![HBA/HBD](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WikipediaHDonorAcceptor.png/300px-WikipediaHDonorAcceptor.png)
 
-Obrazek: [wikipedia](https://en.wikipedia.org/wiki/Hydrogen_bond)
+[wikipedia](https://en.wikipedia.org/wiki/Hydrogen_bond) <!-- .element: style="font-size: 14px; color: silver;" -->
 
 ---
 
 ## logP
 
-- (**clogP, xlogP** ...) - z wikipedii: Współczynnik podziału (P) – w chemii i farmakologii terminem tym określany jest stosunek stężeń substancji w dwóch niemieszających się rozpuszczalnikach w stanie równowagi. Zazwyczaj jednym z rozpuszczalników jest woda drugim natomiast substancja hydrofobowa taka jak n-oktanol. Współczynnik podziału mierzy się dla niezjonizowanej formy substancji odpowiednio dobierając pH podczas pomiarów. Jest on używany do określania lipofilowości substancji. Współczynnik podziału podawany jest w formie logarytmicznej zgodnie ze wzorem:
-
----
-
-## logP
+- **clogP, xlogP** - calculated logP
+- współczynnik podziału (The partition coefficient)
+- is a ratio of concentrations of **un-ionized compound** between the two liquid phases
 
 ![logP](https://upload.wikimedia.org/math/4/7/2/472cd3567a5fcfdf2950f830fd41423c.png)
 
 ---
 
-### logD
+## logD
 
 ![logD](https://upload.wikimedia.org/math/c/d/0/cd04417ce4084b638628a88497e679d8.png)
 
 - The **distribution coefficient** is the ratio of the sum of the concentrations of all forms of the compound (ionized plus un-ionized) in each of the two phases. As such, **it depends on pH**.
+
+---
+
+## logD
+
+![logD](elementy/logD.png)
+
+---
+
+## pK<sub>a</sub>
+
+- acid dissociation co-efficient
+- pK<sub>a</sub> = –log[K<sub>a</sub>]
+- K<sub>a</sub> - stała dysocjacji kwasu
+
+---
+
+## pKa
+
+![pKa](elementy/pKa.png)
+
+---
+
+## pKa - wpływ na "sklad" roztworu
+
+![pKa](elementy/microspecies.png) <!-- .element: style="max-height: 560px;max-width: 964px; " -->
 
 ---
 ## PSA (TPSA)
@@ -72,6 +103,39 @@ Paracetamol:
 
 ![PSA](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Polar-surface-area.png/350px-Polar-surface-area.png)
 
+
+---
+
+## Inne parametry
+
+- **FSP3** - fraction of sp3 carbons
+- **AROM** - number of aromatic rings
+
+
+---
+
+# Drug-like filters
+
+---
+
+## Reguły Lipińskiego (Ro5)
+
+- describes molecular properties important for a drug's pharmacokinetics in the human body, including their absorption, distribution, metabolism, and excretion ("ADME").
+- the rule **does not predict** if a compound is pharmacologically **active**.
+<pre>
+logP < 5
+MW < 500
+HBD < 5
+HBA < 10
+</pre>
+
+---
+
+## desirability
+
+![desirability](elementy/desirability.png)
+
+Matthew Segall, Rules for drug discovery: can simple property criteria help you to find a drug?, Drug Discovery World,  Spring 2014<!-- .element: style="font-size: 14px; color: silver;" -->
 </script>
 </section>
 
@@ -89,6 +153,7 @@ controls: true,
 progress: true,
 history: true,
 center: true,
+
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
