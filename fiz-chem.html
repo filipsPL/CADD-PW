@@ -46,7 +46,18 @@ http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html 
 
 ![HBA/HBD](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WikipediaHDonorAcceptor.png/300px-WikipediaHDonorAcceptor.png)
 
+- mogą zmieniać się wraz z pH!
+
+
 [wikipedia](https://en.wikipedia.org/wiki/Hydrogen_bond) <!-- .element: style="font-size: 14px; color: silver;" -->
+
+---
+
+## HBA, HBD
+
+- acceptor count / sites
+
+![pary e](elementy/parye.png)
 
 ---
 
@@ -74,15 +85,37 @@ http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html 
 
 ---
 
+![logPD](elementy/logp-sirius.png)
+
+[źródło: sirius](http://www.slideshare.net/jonmole/measuring-pkas-logp-and-solubility-by-automated-titration) <!-- .element: style="font-size: 14px; color: silver;" -->
+
+---
+
+- As shown in the figure, the influence of just these two properties on the ADMET 
+(absorption, distribution, metabolism, excretion and toxicity) characteristics of the compounds narrows the range of values that are acceptable from a drug-like perspective.<!-- .element: style="font-size: 20px;" -->
+
+![logP](elementy/sweetspot-1.png)
+
+Źródło: Nature Reviews Drug Discovery 11, 355-365 (May 2012) | doi:10.1038/nrd3701 <!-- .element: style="font-size: 14px; color: silver;" -->
+
+
+---
+
 ## pK<sub>a</sub>
 
 - acid dissociation co-efficient
 - pK<sub>a</sub> = –log[K<sub>a</sub>]
 - K<sub>a</sub> - stała dysocjacji kwasu
+- pH przy którym <i>połowa cząsteczek jest zjonizowana a druga połowa nie</i> (wybaczcie uproszczenie!)
 
 ---
+## np anilina:
 
-## pKa
+![anilina](elementy/pka1.png)
+
+ 
+---
+## pK<sub>a</sub>
 
 ![pKa](elementy/pKa.png)
 
@@ -93,6 +126,14 @@ http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html 
 ![pKa](elementy/microspecies.png) <!-- .element: style="max-height: 560px;max-width: 964px; " -->
 
 ---
+
+## pK<sub>a</sub>
+
+- (generalnie) cząstki neutralne dużo chętniej przechodzą przez membrany
+- cząstki zjonizowane chętniej pozostają w osoczu i są wydalane nerkowo (renal excretion)
+
+
+---
 ## PSA (TPSA)
 
 **(Topological) Polar surface area** (Å²)
@@ -101,15 +142,62 @@ Paracetamol:
 
 ![paracetamol](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Paracetamol-skeletal.svg/220px-Paracetamol-skeletal.svg.png)
 
-![PSA](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Polar-surface-area.png/350px-Polar-surface-area.png)
+![PSA](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Polar-surface-area.png/350px-Polar-surface-area.png) <!-- .element: class="fragment" -->
+
+---
+## PSA
+
+- Molecules with a PSA > 140 tend to be poor at permeating cell membranes
+- For molecules to penetrate the blood–brain barrier (and thus act on receptors in the central nervous system), a PSA < 90 <!-- .element: class="fragment" -->
+- TPSA koreluje z efektami niepożądanymi  in vivo <!-- .element: class="fragment" -->
+- cząsteczki z wysokim logP i niskim PSA mają 2.5x wyższe prawdopodobieństwo bycia toksycznymi niż nietoksycznymi <!-- .element: class="fragment" -->
+ - i odwrotnie: logP<3 i TPSA >75 - niższe ryzyko toksyczności <!-- .element: class="fragment" -->
+
+źródło: Książka Small Molecule Medicinal Chemistry: Strategies and Technologies pod redakcją Werngard Czechtizky,Peter Hamley  <!-- .element: style="font-size: 14px; color: silver;" -->
+
+---
+
+## HLB number
+
+- The hydrophilic-lipophilic balance number
+- measures the degree of a molecule being hydrophilic or lipophilic
+- This number is calculated based on identifying various hydrophil and liphophil regions in the molecule
+- This number is a commonly used descriptor in any workflow in which lipid based delivery can be an option. (e.g. lipid-based drug delivery, cosmetics)
+
+---
+
+## Punkt izoelektryczny
+
+- Isoelectric point
+- wartość pH, przy której populacja cząsteczek amfolitycznych, tj. posiadających kationowe i anionowe grupy funkcyjne (np. aminokwasy biogenne), zawiera średnio tyle samo ładunków dodatnich co ujemnych, na skutek czego ładunek całkowity całej populacji wynosi zero.
+
+--- 
+
+## Punkt izoelektryczny
+
+- W punkcie izolektrycznym cząsteczki mają:
+ - najmniejszą rozpuszczalność
+ - najmniejszą lepkość
+ - najmniejsze ciśnienie osmotyczne
+
+Zobacz: [wikipedia](https://pl.wikipedia.org/wiki/Punkt_izoelektryczny)
 
 
 ---
 
 ## Inne parametry
 
-- **FSP3** - fraction of sp3 carbons
-- **AROM** - number of aromatic rings
+- FSP3 - fraction of sp3 carbons <!-- .element: class="fragment" -->
+- AROM - number of aromatic rings <!-- .element: class="fragment" -->
+
+
+---
+
+#### Medicinal Chemical Properties of Successful CNS Drugs
+
+![t2](elementy/t2.png)
+
+Żródło: NeuroRx. 2005 Oct; 2(4): 541–553. <!-- .element: style="font-size: 14px; color: silver;" -->
 
 
 ---
