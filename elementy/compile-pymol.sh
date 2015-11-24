@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd pymol
+
 prefix=/opt/pymol-svn
 modules=$prefix/modules
 
