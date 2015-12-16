@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>CADD</title>
+<title>CADD: struktury trójwymiarowe makromolekuł</title>
 <link rel="stylesheet" href="reveal/css/reveal.css">
 <link rel="stylesheet" href="reveal/css/theme/filip.css" id="theme">
 
@@ -14,24 +14,172 @@
 <div class="slides">
 
 <!-- .element: style="font-size: 14px; color: silver;" -->
-![alttext](elementy/.png)
-<section data-markdown data-separator="---">
+<!--   ![alttext](elementy/.png)  -->
+<section data-markdown data-separator="---" data-separator-vertical="====">
 <script type="text/template">
 
 
-# Title
+# Struktury trójwymiarowe makromolekuł
+### (białek, RNA, DNA...)
+
+---
+## Od sekwencji do struktury 3D
 
 ---
 
-## Demo 1
-Slide 1
+
+### Struktura pierwszorzędowa
+
+* Sekwencja: kod jednoliterowy:
+<small>AFEDRDPTQFEERHLKFLQQLGKGNFGSVEMCRYDPLQDNTGEVVAVKKLQHSTEEHLRDFEREIEILKSLQHDNIVKYK
+GVCYSAGRRNLKLIMEYLPYGSLRDYLQAHAERIDHIKLLQYTSQICKGMEYLGTKRYIHRDLATRNILVENENRVKIGD
+FGLTKVLPQDKEYYKVKEPGESPIFWYAPESLTESKFSVASDVWSFGVVLYELFTYIEKSKSPPAEFMRMIGNDKQGQMI
+VFHLIELLKNNGRLPRPDGCPDEIYMIMTECWNNNVNQRPSFRDLALRVDQIRDQMAG</small>
+
+
+====
+
+* Aminowkasy - kod trójliterowy: ![aa-2](https://raw.githubusercontent.com/filipsPL/CADD-PW/master/elementy/bialka/1-aa-2.png)
+
+====
+
+* Aminokwasy ![aa](https://raw.githubusercontent.com/filipsPL/CADD-PW/master/elementy/bialka/1-aa.png)
+
 
 ---
-## Demo 1
-Slide 2
+
+### Struktura drugorzędowa
+
+![2-rzędowa](https://raw.githubusercontent.com/filipsPL/CADD-PW/master/elementy/bialka/2-rzedowa.png)
+
+====
+
+Określa się tu sposób przestrzennego ułożenia łańcuchów polipeptydowych białek na skutek powstawania wewnątrzcząsteczkowych wiązań wodorowych przede wszystkim między atomami tlenu grup amidowych i atomami wodoru innych grup amidowych. Łańcuchy polipeptydowe białek mogą układać się w kształt:
+
+* helisy – helisy alfa (na jeden zwój heliksu przypada 3,6 aminokwasów, co odpowiada 0,54 nm[1])
+* pofałdowanej płaszczyzny – harmonijka beta
+* beta zakrętu (pętle omega)
+
 ---
-## Demo 1
-Slide 3
+
+
+### Struktura trzeciorzędowa
+
+![3rzędowa](https://raw.githubusercontent.com/filipsPL/CADD-PW/master/elementy/bialka/3-rzedowa.png)
+
+* PDB code: 4C61
+
+====
+
+Określa się tu wzajemny układ w przestrzeni elementów struktury drugorzędowej, bez uwzględniania zależności od sąsiednich cząsteczek. Kształt, wielkość i właściwości danej podjednostki decydują o aktywności biochemicznej, w tym o działaniu enzymu. Warunkują ją różne wiązania chemiczne oraz oddziaływania międzycząsteczkowe np.:
+
+---
+
+### Struktura czwartorzędowa
+
+![4-rzędowa](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Hemoglobin.jpg/300px-Hemoglobin.jpg)
+
+* hemoglobina. Cztery zasocjowane podjednostki, z których każda zawiera cząsteczkę hemu (zaznaczoną na zielono). 
+* poziom organizacji na którym można opisać budowę białka. Określa się tu wzajemny układ w przestrzeni oraz sposób połączenia się:
+
+---
+## Jak przejść od sekwencji do struktury 3D?
+
+---
+
+### Metody obliczeniowe
+- Dla dużych molekuł (>kika aa) - bardzo kosztowne obliczeniowo
+- Są na to sposoby: _metody gruboziarniste_ (ang: coarse grain)
+
+---
+
+### Np.: SimRNA - program do _zwijania_ RNA
+
+![alttext](elementy/simrna1-crop.png)
+
+
+---
+
+[tutaj film]
+
+---
+
+## Krystalografia rentgenowska
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/j4HgLf_eJoc" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Kryształy w IIMCB
+
+---
+## 
+
+
+---
+## Kryształy w IIMCB
+
+---
+## 
+
+---
+## Kryształy w IIMCB
+
+
+
+---
+
+## Inne metody pozyskiwania struktur 3D
+
+- NMR
+- Cryo-EM (Cryo-electron microscopy)
+
+
+---
+## PDB
+
+- Protein Data Bank
+- http://pdb.org/
+
+---
+
+![alttext](https://upload.wikimedia.org/wikipedia/commons/2/24/Protein_structure_examples.png)
+
+
+---
+## Modelowanie homologiczne
+
+---
+
+![alttext](elementy/homol/1.jpg)
+
+====
+
+![alttext](elementy/homol/2.jpg)
+
+====
+
+![alttext](elementy/homol/2a.jpg)
+
+====
+
+![alttext](elementy/homol/4.jpg)
+
+====
+
+![alttext](elementy/homol/5.jpg)
+
+
+---
+## Dynamika molekularna
+(molecular dynamics)
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ckTqh50r_2w" frameborder="0" allowfullscreen></iframe>
+
+---
+## Koniec
+
+
 
 
 
