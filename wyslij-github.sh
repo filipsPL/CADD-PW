@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="master"
+branch="gh-pages"
 
 git status
 git add --all
