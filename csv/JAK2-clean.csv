@@ -1,4 +1,4 @@
-"Molecule ChEMBL ID","Molecular Weight","AlogP","Smiles","Standard Value"
+"Molecule ChEMBL ID","Molecular Weight","AlogP","Smiles","IC50"
 "CHEMBL1076221",418.84,3.48,"Clc1ccc2OCCC(N3C(=O)Nc4cnc(nc34)n5cnc6ccccc56)c2c1",500.0
 "CHEMBL1077431",376.46,4.05,"Cc1cc(cc(C)c1O)c2ccnc(Nc3ccc(cc3)N4CCOCC4)n2",88.0
 "CHEMBL1077575",414.47,3.58,"O=C(CC#N)Nc1cccc(c1)c2ccnc(Nc3ccc(cc3)N4CCOCC4)n2",303.0
