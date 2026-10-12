@@ -3,9 +3,10 @@
 
 <head>
 <meta charset="utf-8">
-<title>CADD</title>
-<link rel="stylesheet" href="reveal/css/reveal.css">
-<link rel="stylesheet" href="reveal/css/theme/filip.css" id="theme">
+<title>Parametry Fizyko-Chemiczne cząsteczek</title>
+<link rel="stylesheet" href="reveal/dist/reset.css">
+<link rel="stylesheet" href="reveal/dist/reveal.css">
+<link rel="stylesheet" href="reveal/dist/theme/filip.css" id="theme">
 
 </head>
 
@@ -24,6 +25,47 @@
 
 ---
 
+## ADMET
+
+![admet](elementy/admet1.png)
+
+---
+
+## ADMET
+
+- postać z mitologii greckiej, syn Feresa i Klimeny, który panował w Tesalii jako król miasta Feraj.
+
+![admet](elementy/Farewell_of_Admetus_&_Alcestis.jpg)
+
+(https://pl.wikipedia.org/wiki/Admet)
+
+---
+
+## ADMET
+
+- Absorption    <!-- .element: class="fragment" data-fragment-index="1" -->
+- Distribution  <!-- .element: class="fragment" data-fragment-index="2" -->
+- Metabolism    <!-- .element: class="fragment" data-fragment-index="3" -->
+- Excretion     <!-- .element: class="fragment" data-fragment-index="4" -->
+- Toxicity      <!-- .element: class="fragment" data-fragment-index="5" -->
+
+---
+
+## ADMET
+
+- Absorption <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Biodostępnośc, rozpuszczalność, *przenilaklność*
+- Distribution <!-- .element: class="fragment" data-fragment-index="2" -->
+  - LogP / LogD
+  - BBB permeability, CNS permeability
+- Metabolism <!-- .element: class="fragment" data-fragment-index="3" -->
+  - realcje z udziałem enzymów (np CYP)
+- Excretion <!-- .element: class="fragment" data-fragment-index="4" -->
+- Toxicity <!-- .element: class="fragment" data-fragment-index="5" -->
+  - inhibitory hERG, hepatotoksyczność itp.
+
+---
+
 ## MW - Molecular Weight
 
 - masa molowa
@@ -34,9 +76,7 @@
 
 - rb, rotb
 
-![rb](http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual-4.gif)
-
-http://www.csb.yale.edu/userguides/datamanip/dock/DOCK_4.0.1/html/Manual.f.html <!-- .element: style="font-size: 14px; color: silver;" -->
+![rb](elementy/rotb.jpeg)
 
 ---
 
@@ -100,15 +140,6 @@ count = 1, sites = 2
 
 [źródło: sirius](http://www.slideshare.net/jonmole/measuring-pkas-logp-and-solubility-by-automated-titration) <!-- .element: style="font-size: 14px; color: silver;" -->
 
----
-
-- As shown in the figure, the influence of just these two properties on the ADMET
-(absorption, distribution, metabolism, excretion and toxicity) characteristics of the compounds narrows the range of values that are acceptable from a drug-like perspective.<!-- .element: style="font-size: 20px;" -->
-
-![logP](elementy/sweetspot-1.png)
-
-Źródło: Nature Reviews Drug Discovery 11, 355-365 (May 2012) | doi:10.1038/nrd3701 <!-- .element: style="font-size: 14px; color: silver;" -->
-
 
 ---
 
@@ -151,9 +182,9 @@ count = 1, sites = 2
 
 Paracetamol:
 
-![paracetamol](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Paracetamol-skeletal.svg/220px-Paracetamol-skeletal.svg.png)
+![paracetamol](elementy/paracetamol.png)
 
-![PSA](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Polar-surface-area.png/350px-Polar-surface-area.png) <!-- .element: class="fragment" -->
+![PSA](elementy/Polar-surface-area.png) <!-- .element: class="fragment" -->
 
 ---
 ## PSA
@@ -168,39 +199,16 @@ Paracetamol:
 
 ---
 
-## HLB number
-
-- The hydrophilic-lipophilic balance number
-- measures the degree of a molecule being hydrophilic or lipophilic
-- This number is calculated based on identifying various hydrophil and liphophil regions in the molecule
-- This number is a commonly used descriptor in any workflow in which lipid based delivery can be an option. (e.g. lipid-based drug delivery, cosmetics)
+## Jakie powinny być wartości tych parametrów?
 
 ---
 
-## Punkt izoelektryczny
+- As shown in the figure, the influence of just these two properties on the ADMET
+(absorption, distribution, metabolism, excretion and toxicity) characteristics of the compounds narrows the range of values that are acceptable from a drug-like perspective.<!-- .element: style="font-size: 20px;" -->
 
-- Isoelectric point
-- wartość pH, przy której populacja cząsteczek amfolitycznych, tj. posiadających kationowe i anionowe grupy funkcyjne (np. aminokwasy biogenne), zawiera średnio tyle samo ładunków dodatnich co ujemnych, na skutek czego ładunek całkowity całej populacji wynosi zero.
+![logP](elementy/sweetspot-1.png)
 
----
-
-## Punkt izoelektryczny
-
-- W punkcie izolektrycznym cząsteczki mają:
- - najmniejszą rozpuszczalność
- - najmniejszą lepkość
- - najmniejsze ciśnienie osmotyczne
-
-Zobacz: [wikipedia](https://pl.wikipedia.org/wiki/Punkt_izoelektryczny)
-
-
----
-
-## Inne parametry
-
-- FSP3 - fraction of sp3 carbons <!-- .element: class="fragment" -->
-- AROM - number of aromatic rings <!-- .element: class="fragment" -->
-
+Źródło: Nature Reviews Drug Discovery 11, 355-365 (May 2012) | doi:10.1038/nrd3701 <!-- .element: style="font-size: 14px; color: silver;" -->
 
 ---
 
@@ -210,23 +218,23 @@ Zobacz: [wikipedia](https://pl.wikipedia.org/wiki/Punkt_izoelektryczny)
 
 Żródło: NeuroRx. 2005 Oct; 2(4): 541–553. <!-- .element: style="font-size: 14px; color: silver;" -->
 
+--- 
 
----
+## Reguły Lipińskiego
 
-# Drug-like filters
+- Lipinski's rule of five (Ro5)
 
----
+- zestaw wytycznych który pozwala przewidzieć, czy dany związek chemiczny ma szansę stać się lekiem podawanym doustnie (na podstawie jego biodostępności i właściwości farmakokinetycznych)
+- reguły statystyczne
+- nie przewiduje aktywności związku
 
-## Reguły Lipińskiego (Ro5)
 
-- describes molecular properties important for a drug's pharmacokinetics in the human body, including their absorption, distribution, metabolism, and excretion ("ADME").
-- the rule **does not predict** if a compound is pharmacologically **active**.
 <pre>
 logP < 5
 MW < 500
 HBD < 5
 HBA < 10
-</pre>
+</pre><!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -252,30 +260,23 @@ Matthew Segall, Rules for drug discovery: can simple property criteria help you 
 </div>
 </div>
 
-<script src="reveal/lib/js/head.min.js"></script>
-<script src="reveal/js/reveal.js"></script>
+<script src="reveal/dist/reveal.js"></script>
+<script src="reveal/dist/plugin/markdown.js"></script>
 
 <script>
-
 Reveal.initialize({
+// width: "90%",
+// height: "90%",
+margin: 0.1,
 controls: true,
 progress: true,
 history: true,
 center: true,
-
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
-{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-]
-});
-
-Reveal.configure({
-  keyboard: {
-    40: 'next',
-    38: 'prev'
-  }
+keyboard: {
+  40: 'next',
+  38: 'prev'
+},
+plugins: [ RevealMarkdown ]
 });
 </script>
 

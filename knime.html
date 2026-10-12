@@ -4,8 +4,9 @@
 <head>
 <meta charset="utf-8">
 <title>CADD: KNIME intro</title>
-<link rel="stylesheet" href="reveal/css/reveal.css">
-<link rel="stylesheet" href="reveal/css/theme/filip.css" id="theme">
+<link rel="stylesheet" href="reveal/dist/reset.css">
+<link rel="stylesheet" href="reveal/dist/reveal.css">
+<link rel="stylesheet" href="reveal/dist/theme/filip.css" id="theme">
 
 </head>
 
@@ -159,8 +160,8 @@
 </div>
 </div>
 
-<script src="reveal/lib/js/head.min.js"></script>
-<script src="reveal/js/reveal.js"></script>
+<script src="reveal/dist/reveal.js"></script>
+<script src="reveal/dist/plugin/markdown.js"></script>
 
 <script>
 
@@ -169,19 +170,11 @@ controls: true,
 progress: true,
 history: true,
 center: true,
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
-{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-]
-});
-
-Reveal.configure({
-  keyboard: {
-    40: 'next',
-    38: 'prev'
-  }
+keyboard: {
+  40: 'next',
+  38: 'prev'
+},
+plugins: [ RevealMarkdown ]
 });
 
 </script>
